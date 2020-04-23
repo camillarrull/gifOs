@@ -1,0 +1,802 @@
+$font-family1: "Chakra Petch", sans-serif;
+$font-size-s: 16px;
+$font-size-m: 20px;
+%p {
+  align-self: center;
+  color: #ffffff;
+  font-family: $font-family1;
+  font-size: $font-size-s;
+  margin: 10px;
+}
+%boton {
+  align-items: center;
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  box-shadow: 0 1px 0 0 #110038;
+  display: flex;
+  font-family: $font-family1;
+  font-size: $font-size-s;
+  height: 36px;
+  justify-content: center;
+  line-height: 18px;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  width: 140px;
+
+  &:hover {
+    border: 1px solid #110038;
+    cursor: pointer;
+  }
+
+  &:active {
+    border: 1px solid #110038;
+  }
+}
+%hover-boton {
+  &:hover {
+    background: #e6bbe2;
+    border: 1px solid #110038;
+    box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+    border-style: dashed;
+  }
+}
+%barras {
+  background-image: linear-gradient(270deg, #f7c9f3 0%, #4180f6 100%);
+  box-shadow: 0 1px 0 0 #110038;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0px;
+  height: 24px;
+}
+%barras-dark {
+  background-image: linear-gradient(270deg, #ee3efe 0%, #2e32fb 100%);
+}
+%container {
+  background: #e6e6e6;
+  box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+  padding: 0px;
+}
+%boton-menu-temas {
+  background: #f0f0f0;
+  border: 1px solid #808080;
+  box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+  color: #110038;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+
+  &:hover {
+    border: 1px solid #110038;
+    cursor: pointer;
+  }
+
+  &:active {
+    background: #fff4fd;
+    border: 1px solid #cca6c9;
+    box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+  }
+}
+%boton-menu-temas-rosa {
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+}
+%container-dark {
+  background: #b4b4b4;
+  box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 2px 0 0 #ffffff;
+}
+%container-input {
+  background: #fffafe;
+  border: 1px solid #e6bbe2;
+  box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+%boton-dark {
+  background: #2e32fb;
+  border: 1px solid #4c2f99;
+  box-shadow: inset -2px -2px 0 0 #2124b3, inset 2px 2px 0 0 #ffffff;
+}
+%boton-rosa-dark {
+  background: #ee3efe;
+  border: 1px solid #110038;
+  box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+}
+body {
+  background-color: rgb(255, 223, 228);
+  margin: 0px;
+  padding: 0px;
+  .barra-inicio,
+  #barraCamara,
+  #barraCrear {
+    @extend %barras;
+    p {
+      @extend %p;
+    }
+  }
+  #logoYbotones {
+    display: flex;
+    justify-content: space-between;
+    margin: 3%;
+    #logo {
+      display: grid;
+      #logoDark {
+        display: none;
+        grid-area: 1;
+        width: 140px;
+      }
+      #logoDay {
+        width: 140px;
+      }
+    }
+    #botones {
+      button {
+        @extend %boton;
+        @extend %hover-boton;
+      }
+
+      display: flex;
+      #elegirTema {
+        #eleccion {
+          display: flex;
+          #botonDrop {
+            width: 30px;
+          }
+          #botonElegir {
+            margin-left: 20px;
+          }
+        }
+        #menuTema {
+          display: none;
+          button {
+            width: 170px;
+            margin-left: 20px;
+          }
+        }
+      }
+      #crear {
+        a {
+          text-decoration: none;
+          #botonCrear {
+            @extend %boton;
+            color: black;
+            @extend %hover-boton;
+          }
+        }
+      }
+      #misGuifos {
+        a {
+          text-decoration: none;
+          font-family: $font-family1;
+        }
+        #botonMisGuifos {
+          color: black;
+          display: flex;
+          align-items: center;
+          background: none;
+          border: none;
+          box-shadow: none;
+          margin-left: 20px;
+          text-align: left;
+          width: 100px;
+          height: 34px;
+
+          &:active {
+            border: none;
+            color: grey;
+          }
+
+          &:hover {
+            border: 1px solid #110038;
+            border-style: dashed;
+          }
+        }
+      }
+    }
+  }
+  #buscadorGif {
+    @extend %container;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 50px 20px 50px;
+    #barra-superior {
+      @extend %barras;
+      margin: 5px;
+      p {
+        @extend %p;
+      }
+    }
+    #divBusqueda {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px;
+      input {
+        @extend %container;
+        box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+        height: 40px;
+        padding-left: 5px;
+        width: 1200px;
+        margin-left: 5px;
+
+        :placeholder-shown {
+          @extend %p;
+          color: #ffffff;
+        }
+      }
+      #buscar-rosa {
+        align-self: center;
+        display: none;
+        height: 30px;
+        margin: 0px 50px 5px 0px;
+        width: 100px;
+        @extend %boton-menu-temas-rosa;
+        @extend %p;
+        color: black;
+        margin: 5px;
+
+        img {
+          align-self: center;
+          border: none;
+          box-shadow: none;
+          height: 16px;
+          margin: 5px;
+          width: 16px;
+        }
+      }
+      #buscar {
+        @extend %boton-menu-temas;
+        align-self: center;
+        display: flex;
+        height: 30px;
+        margin: 0px 50px 5px 0px;
+        width: 100px;
+        @extend %p;
+        color: #b4b4b4;
+        margin: 5px;
+
+        img {
+          align-self: center;
+          border: none;
+          box-shadow: none;
+          height: 16px;
+          margin: 5px;
+          width: 16px;
+        }
+      }
+      #lupa-blanca {
+        display: none;
+      }
+    }
+  }
+  #menuBuscador {
+    @extend %container;
+    display: none;
+    div {
+      @extend %boton-menu-temas;
+      background: #dbdbdb;
+      border: 1px solid #808080;
+      box-shadow: inset -1px -1px 0 0 #b4b4b4;
+      justify-content: flex-start;
+
+      p {
+        @extend %p;
+        color: #110038;
+      }
+    }
+  }
+  #contenedorBotonesDeBusquedas {
+    display: flex;
+    margin-left: 50px;
+    .boton-guardado {
+      background-color: #4180f6;
+      border: #4c2f99 1px;
+      box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+      width: 140px;
+      height: 34px;
+      text-align: center;
+      color: white;
+      margin-right: 15px;
+    }
+  }
+  #in-2,
+  #in-3 {
+    @extend %container-input;
+    width: 1425px;
+    margin-left: 40px;
+  }
+  #contenedorDeBusqueda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 30px;
+
+    img {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 5px;
+      height: 324px;
+      width: 300px;
+      img {
+        max-height: 300px;
+        max-width: 300px;
+      }
+    }
+  }
+  #contenedor-sugerencias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px;
+
+    .sugerencia {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      height: 324px;
+      width: 300px;
+
+      #giphy-sugerido {
+        position: absolute;
+
+        &:hover {
+          border: 1px dotted #110038;
+        }
+      }
+      #titulo {
+        @extend %barras;
+        align-content: center;
+        color: #ffffff;
+        display: flex;
+        font-family: $font-family1;
+        font-size: 14px;
+        justify-content: space-between;
+        max-width: 300px;
+        z-index: 1;
+      }
+    }
+    #giphys-sugeridos {
+      background: #4180f6;
+      border: 1px solid #4c2f99;
+      box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+      color: #ffffff;
+      height: 28px;
+      width: 75px;
+      margin: 10px;
+      z-index: 1;
+
+      &:hover {
+        border: 1px dotted #110038;
+        cursor: pointer;
+      }
+      p {
+        margin: 5px;
+      }
+    }
+  }
+  #tendencias-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 40px;
+    #div-gif-tendencia {
+      display: flex;
+      flex-direction: column;
+      img {
+        margin: 0px;
+        height: 324px;
+        width: 300px;
+        margin: 10px;
+      }
+      #titulo-tendencia {
+        position: absolute;
+        @extend %barras;
+        margin-top: 310px;
+        width: 300px;
+        margin-left: 10px;
+        color: white;
+      }
+    }
+    #input-sugerencias,
+    #input-tendencias {
+      width: 1255px;
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  #logoCamara {
+    display: flex;
+    margin: 50px;
+    justify-content: space-between;
+    #flecha {
+      margin-right: 30px;
+    }
+    button {
+      @extend %boton;
+    }
+    #logoDay {
+      width: 140px;
+    }
+  }
+  #cuadroMensaje {
+    width: 650px;
+    height: 380px;
+    margin: 10% 28%;
+    background: #e6e6e6;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+    #divIcono {
+      display: flex;
+      margin: 20px;
+      img {
+        margin-right: 20px;
+        width: 45px;
+        height: 40px;
+      }
+      p {
+        font-weight: bold;
+        font-family: $font-family1;
+        font-size: 16px;
+        color: #110038;
+        letter-spacing: 0;
+        line-height: 22px;
+      }
+    }
+    #instrucciones {
+      margin-left: 85px;
+      p {
+        font-family: $font-family1;
+        font-size: 14px;
+        color: #110038;
+        letter-spacing: 0;
+        line-height: 20px;
+      }
+    }
+  }
+  .botones-camara {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px;
+    a {
+      text-decoration: none;
+      #cancelar {
+        @extend %boton;
+        margin-right: 20px;
+        background: #fff4fd;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+      }
+    }
+    button {
+      @extend %boton;
+    }
+  }
+  .grabar-guifos {
+    width: 650px;
+    height: 380px;
+    background: #e6e6e6;
+    box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+    #barraChequeo,
+    #barraCapturando,
+    #barraVistaPrevia,
+    #barraSubiendoGuifo,
+    #barraGuifoSubido {
+      @extend %barras;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      font-family: $font-family1;
+      color: white;
+      font-size: 13px;
+    }
+    #barraCapturando {
+      display: none;
+    }
+    #barraVistaPrevia {
+      display: none;
+    }
+    #barraSubiendoGuifo {
+      display: none;
+    }
+    #barraGuifoSubido {
+      display: none;
+    }
+  }
+  #botonesCapturar {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 5%;
+    button {
+      @extend %boton;
+    }
+    #camara {
+      width: 60px;
+    }
+  }
+  .video-wrap {
+    height: 240px;
+    margin: 30px;
+    img {
+      display: none;
+    }
+  }
+  #botonesGrabar {
+    display: none;
+    justify-content: space-between;
+    margin: 30px;
+
+    #botones {
+      display: flex;
+      button {
+        @extend %boton;
+        background: #ff6161;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
+        color: white;
+      }
+      #icono-grabando {
+        width: 60px;
+      }
+    }
+  }
+  .barra-tiempo {
+    background: #ffffff;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+  }
+  #botonesRealizado {
+    display: none;
+    margin: 20px;
+    justify-content: space-between;
+    #botonRepetirYSubir {
+      display: flex;
+      a {
+        text-decoration: none;
+        #botonRepetir {
+          @extend %boton;
+          margin-right: 20px;
+          background: #fff4fd;
+          border: 1px solid #110038;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          color: black;
+        }
+      }
+      button {
+        @extend %boton;
+      }
+    }
+  }
+  #cuadradoBlanco {
+    display: none;
+    background: #ffffff;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+    height: 290px;
+    margin: 10px;
+    #planeta {
+      margin-top: 10%;
+      img {
+        margin-left: 50%;
+      }
+      p {
+        font-family: $font-family1;
+        font-size: 16px;
+        color: #110038;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 22px;
+      }
+    }
+
+    #primera-barra {
+      width: 308px;
+      display: flex;
+      background: #ffffff;
+      border: 1px solid #979797;
+      box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+      margin-left: 26%;
+
+      .barra-rosa {
+        background: #f7c9f3;
+        height: 20px;
+        width: 12px;
+        border: 1px solid white;
+      }
+      .barra {
+        background: #999999;
+
+        height: 20px;
+        width: 12px;
+        border: 1px solid white;
+      }
+    }
+    #tiempoRestante {
+      font-family: $font-family1;
+      font-size: 12px;
+      color: rgba(17, 0, 56, 0.64);
+      letter-spacing: 0;
+      text-align: center;
+      line-height: 14px;
+    }
+  }
+  #botonc {
+    display: flex;
+    justify-content: flex-end;
+    a {
+      text-decoration: none;
+      #botonCancelar {
+        @extend %boton;
+        display: none;
+        margin-right: 10px;
+        color: black;
+      }
+    }
+  }
+  #guifoCreado {
+    display: none;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  #enmarcarGuifo {
+    height: 190px;
+    width: 365px;
+    background: #ffffff;
+    border: 1px solid #979797;
+    box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+  }
+  #botonesGuifoCreado {
+    p {
+      font-family: $font-family1;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      font-family: $font-family1;
+      button {
+        @extend %boton;
+        font-size: 14px;
+        margin: 10px;
+        width: 180px;
+        background: #fff4fd;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+      }
+      a {
+        text-decoration: none;
+        #botonDescargar {
+          @extend %boton;
+          color: black;
+          font-size: 14px;
+          margin: 10px;
+          width: 180px;
+          background: #fff4fd;
+          border: 1px solid #110038;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+        }
+      }
+    }
+    a {
+      text-decoration: none;
+      #botonListo {
+        margin: 50%;
+        @extend %boton;
+        font-size: 14px;
+        margin: 50% 25%;
+      }
+    }
+  }
+  #mis-guifos {
+    @extend %container-input;
+    height: 20px;
+    font-family: $font-family1;
+    font-size: 12px;
+    margin: 5%;
+  }
+  #contenedorGuifos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5%;
+    img {
+      margin-bottom: 30px;
+    }
+  }
+  #crear {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+//MODO DARK//
+.modoDark {
+  background-color: #110038;
+  #logoYbotones {
+    #logo {
+      #logoDark {
+        display: block;
+        grid-area: 1;
+      }
+      #logoDay {
+        display: none;
+      }
+    }
+    #botones {
+      button {
+        background: rgb(245, 97, 200);
+        color: white;
+      }
+    }
+  }
+  #buscadorGif {
+    @extend %container-dark;
+
+    #barra-superior {
+      @extend %barras-dark;
+      margin: 5px;
+    }
+
+    #divBusqueda {
+      #buscar {
+        border: 1px solid #808080;
+        box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+        color: #b4b4b4;
+        p {
+          color: #8f8f8f;
+        }
+      }
+      #buscar-rosa {
+        background: #ee3efe;
+        border: 1px solid #110038;
+        box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+        color: white;
+        &:active {
+          background: #ce36db;
+          border: 1px solid #110038;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          border-style: dashed;
+        }
+      }
+    }
+  }
+  #menuBuscador {
+    @extend %container-dark;
+
+    div {
+      border: 1px solid #808080;
+      box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+      background: #cccccc;
+      display: none;
+      justify-content: flex-start;
+
+      p {
+        color: #110038;
+      }
+    }
+  }
+  #input-2,
+  #input-3 {
+    border: 1px solid #2e32fb;
+    box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #110038;
+  }
+  #contenedor-sugerencias {
+    .sugerencia {
+      #titulo {
+        @extend %barras-dark;
+      }
+      #giphys-sugeridos {
+        @extend %boton-dark;
+      }
+    }
+  }
+  #tendencias-container {
+    #div-gif-tendencia {
+      #titulo-tendencia {
+        @extend %barras-dark;
+      }
+    }
+  }
+}

@@ -1,0 +1,985 @@
+body .barra-inicio p,
+body #barraCamara p,
+body #barraCrear p, body #buscadorGif #barra-superior p, body #buscadorGif #divBusqueda input :placeholder-shown, body #buscadorGif #divBusqueda #buscar-rosa, body #buscadorGif #divBusqueda #buscar, body #menuBuscador div p {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #ffffff;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  margin: 10px;
+}
+
+body #logoYbotones #botones button, body #logoYbotones #botones #crear a #botonCrear, body #logoCamara button, body .botones-camara a #cancelar, body .botones-camara button, body #botonesCapturar button, body #botonesGrabar #botones button, body #botonesRealizado #botonRepetirYSubir a #botonRepetir, body #botonesRealizado #botonRepetirYSubir button, body #botonc a #botonCancelar, body #botonesGuifoCreado div button, body #botonesGuifoCreado div a #botonDescargar, body #botonesGuifoCreado a #botonListo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  height: 36px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 18px;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  width: 140px;
+}
+
+body #logoYbotones #botones button:hover, body #logoYbotones #botones #crear a #botonCrear:hover, body #logoCamara button:hover, body .botones-camara a #cancelar:hover, body .botones-camara button:hover, body #botonesCapturar button:hover, body #botonesGrabar #botones button:hover, body #botonesRealizado #botonRepetirYSubir a #botonRepetir:hover, body #botonesRealizado #botonRepetirYSubir button:hover, body #botonc a #botonCancelar:hover, body #botonesGuifoCreado div button:hover, body #botonesGuifoCreado div a #botonDescargar:hover, body #botonesGuifoCreado a #botonListo:hover {
+  border: 1px solid #110038;
+  cursor: pointer;
+}
+
+body #logoYbotones #botones button:active, body #logoYbotones #botones #crear a #botonCrear:active, body #logoCamara button:active, body .botones-camara a #cancelar:active, body .botones-camara button:active, body #botonesCapturar button:active, body #botonesGrabar #botones button:active, body #botonesRealizado #botonRepetirYSubir a #botonRepetir:active, body #botonesRealizado #botonRepetirYSubir button:active, body #botonc a #botonCancelar:active, body #botonesGuifoCreado div button:active, body #botonesGuifoCreado div a #botonDescargar:active, body #botonesGuifoCreado a #botonListo:active {
+  border: 1px solid #110038;
+}
+
+body #logoYbotones #botones button:hover, body #logoYbotones #botones #crear a #botonCrear:hover {
+  background: #e6bbe2;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  border-style: dashed;
+}
+
+body .barra-inicio,
+body #barraCamara,
+body #barraCrear, body #buscadorGif #barra-superior, body #contenedor-sugerencias .sugerencia #titulo, body #tendencias-container #div-gif-tendencia #titulo-tendencia, body .grabar-guifos #barraChequeo,
+body .grabar-guifos #barraCapturando,
+body .grabar-guifos #barraVistaPrevia,
+body .grabar-guifos #barraSubiendoGuifo,
+body .grabar-guifos #barraGuifoSubido {
+  background-image: -webkit-gradient(linear, right top, left top, from(#f7c9f3), to(#4180f6));
+  background-image: linear-gradient(270deg, #f7c9f3 0%, #4180f6 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0px;
+  height: 24px;
+}
+
+.modoDark #buscadorGif #barra-superior, .modoDark #contenedor-sugerencias .sugerencia #titulo, .modoDark #tendencias-container #div-gif-tendencia #titulo-tendencia {
+  background-image: -webkit-gradient(linear, right top, left top, from(#ee3efe), to(#2e32fb));
+  background-image: linear-gradient(270deg, #ee3efe 0%, #2e32fb 100%);
+}
+
+body #buscadorGif, body #buscadorGif #divBusqueda input, body #menuBuscador {
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+  padding: 0px;
+}
+
+body #buscadorGif #divBusqueda #buscar, body #menuBuscador div {
+  background: #f0f0f0;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+  color: #110038;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+body #buscadorGif #divBusqueda #buscar:hover, body #menuBuscador div:hover {
+  border: 1px solid #110038;
+  cursor: pointer;
+}
+
+body #buscadorGif #divBusqueda #buscar:active, body #menuBuscador div:active {
+  background: #fff4fd;
+  border: 1px solid #cca6c9;
+  -webkit-box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #e6dce4, inset 1px 1px 0 0 #ffffff;
+}
+
+body #buscadorGif #divBusqueda #buscar-rosa {
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+}
+
+.modoDark #buscadorGif, .modoDark #menuBuscador {
+  background: #b4b4b4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #8f8f8f, inset 2px 2px 0 0 #ffffff;
+}
+
+body #in-2,
+body #in-3, body #mis-guifos {
+  background: #fffafe;
+  border: 1px solid #e6bbe2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+          box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.modoDark #contenedor-sugerencias .sugerencia #giphys-sugeridos {
+  background: #2e32fb;
+  border: 1px solid #4c2f99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #2124b3, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #2124b3, inset 2px 2px 0 0 #ffffff;
+}
+
+body {
+  background-color: #ffdfe4;
+  margin: 0px;
+  padding: 0px;
+}
+
+body #logoYbotones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 3%;
+}
+
+body #logoYbotones #logo {
+  display: -ms-grid;
+  display: grid;
+}
+
+body #logoYbotones #logo #logoDark {
+  display: none;
+  -ms-grid-row: 1;
+  grid-area: 1;
+  width: 140px;
+}
+
+body #logoYbotones #logo #logoDay {
+  width: 140px;
+}
+
+body #logoYbotones #botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #logoYbotones #botones #elegirTema #eleccion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #logoYbotones #botones #elegirTema #eleccion #botonDrop {
+  width: 30px;
+}
+
+body #logoYbotones #botones #elegirTema #eleccion #botonElegir {
+  margin-left: 20px;
+}
+
+body #logoYbotones #botones #elegirTema #menuTema {
+  display: none;
+}
+
+body #logoYbotones #botones #elegirTema #menuTema button {
+  width: 170px;
+  margin-left: 20px;
+}
+
+body #logoYbotones #botones #crear a {
+  text-decoration: none;
+}
+
+body #logoYbotones #botones #crear a #botonCrear {
+  color: black;
+}
+
+body #logoYbotones #botones #misGuifos a {
+  text-decoration: none;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+body #logoYbotones #botones #misGuifos #botonMisGuifos {
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  margin-left: 20px;
+  text-align: left;
+  width: 100px;
+  height: 34px;
+}
+
+body #logoYbotones #botones #misGuifos #botonMisGuifos:active {
+  border: none;
+  color: grey;
+}
+
+body #logoYbotones #botones #misGuifos #botonMisGuifos:hover {
+  border: 1px solid #110038;
+  border-style: dashed;
+}
+
+body #buscadorGif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 50px 20px 50px;
+}
+
+body #buscadorGif #barra-superior {
+  margin: 5px;
+}
+
+body #buscadorGif #divBusqueda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5px;
+}
+
+body #buscadorGif #divBusqueda input {
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+  height: 40px;
+  padding-left: 5px;
+  width: 1200px;
+  margin-left: 5px;
+}
+
+body #buscadorGif #divBusqueda input :placeholder-shown {
+  color: #ffffff;
+}
+
+body #buscadorGif #divBusqueda #buscar-rosa {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  display: none;
+  height: 30px;
+  margin: 0px 50px 5px 0px;
+  width: 100px;
+  color: black;
+  margin: 5px;
+}
+
+body #buscadorGif #divBusqueda #buscar-rosa img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 16px;
+  margin: 5px;
+  width: 16px;
+}
+
+body #buscadorGif #divBusqueda #buscar {
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 30px;
+  margin: 0px 50px 5px 0px;
+  width: 100px;
+  color: #b4b4b4;
+  margin: 5px;
+}
+
+body #buscadorGif #divBusqueda #buscar img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  height: 16px;
+  margin: 5px;
+  width: 16px;
+}
+
+body #buscadorGif #divBusqueda #lupa-blanca {
+  display: none;
+}
+
+body #menuBuscador {
+  display: none;
+}
+
+body #menuBuscador div {
+  background: #dbdbdb;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #b4b4b4;
+          box-shadow: inset -1px -1px 0 0 #b4b4b4;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body #menuBuscador div p {
+  color: #110038;
+}
+
+body #contenedorBotonesDeBusquedas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 50px;
+}
+
+body #contenedorBotonesDeBusquedas .boton-guardado {
+  background-color: #4180f6;
+  border: #4c2f99 1px;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+  width: 140px;
+  height: 34px;
+  text-align: center;
+  color: white;
+  margin-right: 15px;
+}
+
+body #in-2,
+body #in-3 {
+  width: 1425px;
+  margin-left: 40px;
+}
+
+body #contenedorDeBusqueda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0px;
+  margin: 30px;
+}
+
+body #contenedorDeBusqueda img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 5px;
+  height: 324px;
+  width: 300px;
+}
+
+body #contenedorDeBusqueda img img {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+body #contenedor-sugerencias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0px;
+}
+
+body #contenedor-sugerencias .sugerencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 324px;
+  width: 300px;
+}
+
+body #contenedor-sugerencias .sugerencia #giphy-sugerido {
+  position: absolute;
+}
+
+body #contenedor-sugerencias .sugerencia #giphy-sugerido:hover {
+  border: 1px dotted #110038;
+}
+
+body #contenedor-sugerencias .sugerencia #titulo {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 300px;
+  z-index: 1;
+}
+
+body #contenedor-sugerencias #giphys-sugeridos {
+  background: #4180f6;
+  border: 1px solid #4c2f99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #284f99, inset 2px 2px 0 0 #ffffff;
+  color: #ffffff;
+  height: 28px;
+  width: 75px;
+  margin: 10px;
+  z-index: 1;
+}
+
+body #contenedor-sugerencias #giphys-sugeridos:hover {
+  border: 1px dotted #110038;
+  cursor: pointer;
+}
+
+body #contenedor-sugerencias #giphys-sugeridos p {
+  margin: 5px;
+}
+
+body #tendencias-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px;
+  margin: 40px;
+}
+
+body #tendencias-container #div-gif-tendencia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #tendencias-container #div-gif-tendencia img {
+  margin: 0px;
+  height: 324px;
+  width: 300px;
+  margin: 10px;
+}
+
+body #tendencias-container #div-gif-tendencia #titulo-tendencia {
+  position: absolute;
+  margin-top: 310px;
+  width: 300px;
+  margin-left: 10px;
+  color: white;
+}
+
+body #tendencias-container #input-sugerencias,
+body #tendencias-container #input-tendencias {
+  width: 1255px;
+}
+
+body #tendencias-container #input-sugerencias input,
+body #tendencias-container #input-tendencias input {
+  width: 100%;
+}
+
+body #logoCamara {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 50px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #logoCamara #flecha {
+  margin-right: 30px;
+}
+
+body #logoCamara #logoDay {
+  width: 140px;
+}
+
+body #cuadroMensaje {
+  width: 650px;
+  height: 380px;
+  margin: 10% 28%;
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+}
+
+body #cuadroMensaje #divIcono {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+}
+
+body #cuadroMensaje #divIcono img {
+  margin-right: 20px;
+  width: 45px;
+  height: 40px;
+}
+
+body #cuadroMensaje #divIcono p {
+  font-weight: bold;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+body #cuadroMensaje #instrucciones {
+  margin-left: 85px;
+}
+
+body #cuadroMensaje #instrucciones p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+body .botones-camara {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 20px;
+}
+
+body .botones-camara a {
+  text-decoration: none;
+}
+
+body .botones-camara a #cancelar {
+  margin-right: 20px;
+  background: #fff4fd;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+}
+
+body .grabar-guifos {
+  width: 650px;
+  height: 380px;
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+          box-shadow: inset -2px -2px 0 0 #b4b4b4, inset 2px 2px 0 0 #ffffff;
+}
+
+body .grabar-guifos #barraChequeo,
+body .grabar-guifos #barraCapturando,
+body .grabar-guifos #barraVistaPrevia,
+body .grabar-guifos #barraSubiendoGuifo,
+body .grabar-guifos #barraGuifoSubido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Chakra Petch", sans-serif;
+  color: white;
+  font-size: 13px;
+}
+
+body .grabar-guifos #barraCapturando {
+  display: none;
+}
+
+body .grabar-guifos #barraVistaPrevia {
+  display: none;
+}
+
+body .grabar-guifos #barraSubiendoGuifo {
+  display: none;
+}
+
+body .grabar-guifos #barraGuifoSubido {
+  display: none;
+}
+
+body #botonesCapturar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 5%;
+}
+
+body #botonesCapturar #camara {
+  width: 60px;
+}
+
+body .video-wrap {
+  height: 240px;
+  margin: 30px;
+}
+
+body .video-wrap img {
+  display: none;
+}
+
+body #botonesGrabar {
+  display: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px;
+}
+
+body #botonesGrabar #botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #botonesGrabar #botones button {
+  background: #ff6161;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
+  color: white;
+}
+
+body #botonesGrabar #botones #icono-grabando {
+  width: 60px;
+}
+
+body .barra-tiempo {
+  background: #ffffff;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+}
+
+body #botonesRealizado {
+  display: none;
+  margin: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #botonesRealizado #botonRepetirYSubir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #botonesRealizado #botonRepetirYSubir a {
+  text-decoration: none;
+}
+
+body #botonesRealizado #botonRepetirYSubir a #botonRepetir {
+  margin-right: 20px;
+  background: #fff4fd;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+  color: black;
+}
+
+body #cuadradoBlanco {
+  display: none;
+  background: #ffffff;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+  height: 290px;
+  margin: 10px;
+}
+
+body #cuadradoBlanco #planeta {
+  margin-top: 10%;
+}
+
+body #cuadradoBlanco #planeta img {
+  margin-left: 50%;
+}
+
+body #cuadradoBlanco #planeta p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+}
+
+body #cuadradoBlanco #primera-barra {
+  width: 308px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+  margin-left: 26%;
+}
+
+body #cuadradoBlanco #primera-barra .barra-rosa {
+  background: #f7c9f3;
+  height: 20px;
+  width: 12px;
+  border: 1px solid white;
+}
+
+body #cuadradoBlanco #primera-barra .barra {
+  background: #999999;
+  height: 20px;
+  width: 12px;
+  border: 1px solid white;
+}
+
+body #cuadradoBlanco #tiempoRestante {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 12px;
+  color: rgba(17, 0, 56, 0.64);
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 14px;
+}
+
+body #botonc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body #botonc a {
+  text-decoration: none;
+}
+
+body #botonc a #botonCancelar {
+  display: none;
+  margin-right: 10px;
+  color: black;
+}
+
+body #guifoCreado {
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+body #enmarcarGuifo {
+  height: 190px;
+  width: 365px;
+  background: #ffffff;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #e6e6e6, inset 2px 2px 0 0 #000000;
+}
+
+body #botonesGuifoCreado p {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+body #botonesGuifoCreado div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+body #botonesGuifoCreado div button {
+  font-size: 14px;
+  margin: 10px;
+  width: 180px;
+  background: #fff4fd;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+}
+
+body #botonesGuifoCreado div a {
+  text-decoration: none;
+}
+
+body #botonesGuifoCreado div a #botonDescargar {
+  color: black;
+  font-size: 14px;
+  margin: 10px;
+  width: 180px;
+  background: #fff4fd;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #997d97, inset 1px 1px 0 0 #ffffff;
+}
+
+body #botonesGuifoCreado a {
+  text-decoration: none;
+}
+
+body #botonesGuifoCreado a #botonListo {
+  margin: 50%;
+  font-size: 14px;
+  margin: 50% 25%;
+}
+
+body #mis-guifos {
+  height: 20px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 12px;
+  margin: 5%;
+}
+
+body #contenedorGuifos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5%;
+}
+
+body #contenedorGuifos img {
+  margin-bottom: 30px;
+}
+
+body #crear a {
+  text-decoration: none;
+}
+
+.modoDark {
+  background-color: #110038;
+}
+
+.modoDark #logoYbotones #logo #logoDark {
+  display: block;
+  -ms-grid-row: 1;
+  grid-area: 1;
+}
+
+.modoDark #logoYbotones #logo #logoDay {
+  display: none;
+}
+
+.modoDark #logoYbotones #botones button {
+  background: #f561c8;
+  color: white;
+}
+
+.modoDark #buscadorGif #barra-superior {
+  margin: 5px;
+}
+
+.modoDark #buscadorGif #divBusqueda #buscar {
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+  color: #b4b4b4;
+}
+
+.modoDark #buscadorGif #divBusqueda #buscar p {
+  color: #8f8f8f;
+}
+
+.modoDark #buscadorGif #divBusqueda #buscar-rosa {
+  background: #ee3efe;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  color: white;
+}
+
+.modoDark #buscadorGif #divBusqueda #buscar-rosa:active {
+  background: #ce36db;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #a72cb3, inset 1px 1px 0 0 #ffffff;
+  border-style: dashed;
+}
+
+.modoDark #menuBuscador div {
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #b4b4b4, inset 1px 1px 0 0 #ffffff;
+  background: #cccccc;
+  display: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.modoDark #menuBuscador div p {
+  color: #110038;
+}
+
+.modoDark #input-2,
+.modoDark #input-3 {
+  border: 1px solid #2e32fb;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #110038;
+          box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #110038;
+}
+/*# sourceMappingURL=style.css.map */

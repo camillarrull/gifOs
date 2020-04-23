@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crea tu Guif</title>
+    <link rel="stylesheet" href="./estilos/style.css" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/RecordRTC/5.5.8/RecordRTC.js"></script>
+  </head>
+  <body>
+    <header id="barraCamara">
+      <p>
+        ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número
+        de visitas: 12.765.803
+      </p>
+    </header>
+    <section id="logoCamara">
+      <a href="index.html"
+        ><img src="./assets/arrow.svg" id="flecha" alt="flecha"
+      /></a>
+      <img src="./assets/gifOF_logo.png" id="logoDay" alt="logo" />
+    </section>
+    <div id="cuadroMensaje">
+      <div id="barraCrear">
+        <p>Crear Guifos</p>
+      </div>
+      <div id="divIcono">
+        <img src="./assets/window-img.png" alt="window-img" />
+        <p>Aquí podrás crear tus propios guifos</p>
+      </div>
+
+      <div id="instrucciones">
+        <p>
+          Crear tu <strong>guifo</strong> es muy fácil, graba cualquier imagen
+          con tu cámara y obtén guifos personalizados. Los pasos para crear tu
+          guifo son: <br />
+          <br /><strong>1)</strong> Dar permisos de acceso a la cámara (sólo por
+          el tiempo de uso) <br /><strong>2)</strong> Capturar tu momento guifo
+          <br /><strong>3)</strong> Revisar el momento <br /><strong>4)</strong>
+          Listo para subir y compartir! <br />
+          <br />¿Quieres comenzar a crear tu <strong>guifo</strong> ahora?
+        </p>
+
+        <div class="botones-camara">
+          <button id="comenzar">Comenzar</button>
+          <a href="index.html"><div id="cancelar">Cancelar</div></a>
+        </div>
+      </div>
+      <!-- CREANDO GUIFOS -->
+      <section class="grabar-guifos" id="grabar-guifos" hidden>
+        <div class="bloque-grabar" id="bloque-grabar">
+          <div id="barraChequeo">
+            <img src="./assets/button-close.svg" alt="cruz" />Un Chequeo Antes
+            De Empezar
+          </div>
+          <div id="barraCapturando">
+            <img src="./assets/button-close.svg" alt="cruz" />Capturando tu
+            Guifo
+          </div>
+          <div id="barraVistaPrevia">
+            <img src="./assets/button-close.svg" alt="cruz" />Vista Previa
+          </div>
+          <div id="barraSubiendoGuifo">
+            <img src="./assets/button-close.svg" alt="cruz" />Subiendo Guifo
+          </div>
+          <div id="barraGuifoSubido">
+            <img src="./assets/button-close.svg" alt="cruz" />Guifo subido con
+            exito
+          </div>
+          <div class="video-wrap" id="video-wrap">
+            <video id="video" playsinline autoplay></video>
+            <img id="img" class="img" src="" alt="img" />
+          </div>
+          <div id="botonesCapturar">
+            <button id="capturar">Capturar</button>
+            <button id="camara">
+              <img src="./assets/camera.svg" alt="camara" />
+            </button>
+          </div>
+          <div id="botonesGrabar">
+            <div class="barra-tiempo" id="barra-tiempo">00:00:03:25</div>
+            <div id="botones">
+              <button class="boton-grabando" id="icono-grabando">
+                <img
+                  src="./assets/recording.svg"
+                  alt="guardando"
+                  class="recording"
+                />
+              </button>
+              <button class="boton-grabando" id="botonStop">Listo</button>
+            </div>
+          </div>
+          <div id="botonesRealizado">
+            <div class="barra-tiempo" id="barra-tiempos">00:00:10:03</div>
+            <div id="botonRepetirYSubir">
+              <a href="./camara.html"
+                ><div id="botonRepetir">Repetir Captura</div></a
+              >
+              <button id="subirGuifo">Subir Guifo</button>
+            </div>
+          </div>
+          <div id="cuadradoBlanco">
+            <div id="planeta">
+              <img src="./assets/globe_img.png" alt="globo" />
+              <p>Estamos subiendo tu guifo...</p>
+            </div>
+            <div id="primera-barra" class="barra-rosa">
+              <div class="barra-rosa"></div>
+              <div class="barra-rosa"></div>
+              <div class="barra-rosa"></div>
+              <div class="barra-rosa"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+              <div class="barra"></div>
+            </div>
+            <div id="tiempoRestante">
+              <p>Tiempo restante <s>30 anos</s> algunos minutos</p>
+            </div>
+          </div>
+          <div id="botonc">
+            <a href="./index.html"> <div id="botonCancelar">Cancelar</div></a>
+          </div>
+          <div id="guifoCreado">
+            <div id="enmarcarGuifo"></div>
+            <div id="botonesGuifoCreado">
+              <p><strong>Guifo creado con exito</strong></p>
+              <div>
+                <button id="botonCopiar">Copiar Enlace Guifo</button>
+                <a href="" download="" id="descarga" class="descarga"
+                  ><div id="botonDescargar">Descargar Guifo</div></a
+                >
+              </div>
+              <a href="./index.html"><div id="botonListo">Listo</div></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="cuadrado-blanco-guifos" id="mis-guifos">Mis Guifos</div>
+    <div id="contenedorGuifos" class="contenedorGuifos" hidden></div>
+    <script src="./script/camara.js"></script>
+  </body>
+</html>

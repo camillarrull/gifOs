@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuifOs</title>
+    <link rel="stylesheet" href="./estilos/style.css" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="barra-inicio">
+        <p>
+          ¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número
+          de visitas: 12.765.803
+        </p>
+      </section>
+    </header>
+    <div id="logoYbotones">
+      <div id="logo">
+        <img src="./assets/gifOF_logo.png" id="logoDay" alt="logoDay" />
+        <img src="./assets/gifOF_logo_dark.png" id="logoDark" alt="logoDark" />
+      </div>
+      <div id="botones">
+        <div id="crear">
+          <a href="camara.html"><div id="botonCrear">Crear Guifos</div></a>
+        </div>
+        <div id="elegirTema">
+          <div id="eleccion">
+            <button id="botonElegir">Elegir tema</button>
+            <button id="botonDrop">
+              <img src="./assets/dropdown.svg" alt="drop" id="drop" />
+            </button>
+          </div>
+          <div id="menuTema" class="menuCambiar">
+            <button id="day">Sailor Day</button>
+            <button id="dark">Sailor Dark</button>
+          </div>
+        </div>
+        <div id="misGuifos">
+          <a href="./gifs.html">
+            <div class="day" id="botonMisGuifos"><u>M</u>is Guifos</div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="buscadorGif">
+      <div id="barra-superior">
+        <p>Buscar</p>
+      </div>
+      <div id="divBusqueda">
+        <input
+          type="text"
+          class="day"
+          id="input-buscar"
+          placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"
+        />
+        <button id="buscar">
+          <img src="./assets/lupa_inactive.svg" id="lupa" alt="lupa" />Buscar
+        </button>
+        <button id="buscar-rosa">
+          <img src="./assets/lupa.svg" id="lupa-negra" alt="lupa" />Buscar
+        </button>
+        <img src="./assets/lupa_light.svg" id="lupa-blanca" alt="lupa-blanca" />
+      </div>
+
+      <div class="day" id="menuBuscador">
+        <div class="day" id="resultado">
+          <p>Resultado de tu búsqueda</p>
+        </div>
+        <div class="day" id="resultado-similar">
+          <p>Resultado similar</p>
+        </div>
+        <div class="day" id="tendencia">
+          <p>Lo más buscado</p>
+        </div>
+      </div>
+    </div>
+    <div id="contenedorBotonesDeBusquedas"></div>
+    <div id="contenedorDeBusqueda"></div>
+    <section>
+      <div class="day" id="input-sugerencias">
+        <input type="text" placeholder="Hoy te sugerimos" id="in-2" />
+      </div>
+      <div class="sugerencia" id="contenedor-sugerencias"></div>
+    </section>
+    <section>
+      <div id="input-tendencias">
+        <input type="text" placeholder="Tendencias" id="in-3" />
+      </div>
+      <div class="sugerencia" id="tendencias-container"></div>
+    </section>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
